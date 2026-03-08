@@ -1,0 +1,23 @@
+[package]
+name = "qwen3-rewriter"
+version = "0.1.0"
+edition = "2021"
+description = "Text rewrite engine using Qwen3-0.6B (ITN + punctuation + CSC)"
+
+[lib]
+name = "qwen3_rewrite"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+qwen-core = { path = "../QwenASR/crates/qwen-core" }
+libc = "0.2"
+
+[features]
+default = ["metal"]
+metal = ["qwen-core/metal"]
+blas = ["qwen-core/blas"]
+vdsp = ["qwen-core/vdsp"]
+
+[profile.release]
+opt-level = 3
+lto = "thin"
