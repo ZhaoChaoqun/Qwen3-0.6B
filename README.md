@@ -1,4 +1,4 @@
-# Qwen3-ASR-0.6B Text Rewrite
+# Qwen3-0.6B Text Rewrite
 
 基于 Qwen3-0.6B 的 ASR 文本后处理（Text Rewrite）模型，用于将 ASR 输出的口语化文本转换为规范书面文本。
 
@@ -28,4 +28,4 @@ rust-reference/     # Rust 推理代码参考片段（来自 QwenASR 引擎）
 
 ## 相关项目
 
-- [QwenASR](https://github.com/chaoqunzhao_microsoft/QwenASR) — Rust ASR 推理引擎（本项目的 rewrite 功能原始集成于此）
+- [QwenASR](https://github.com/ZhaoChaoqun/QwenASR) — Rust ASR 推理引擎（本项目的 rewrite 功能原始集成于此）
